@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Submissions – Catachresis</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #fefdef;
+      color: #23264f;
+      font-family: 'Shippori Mincho', serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header, nav, main, footer {
+      max-width: 800px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    h1, h2 {
+      font-weight: 700;
+      margin: 0;
+    }
+
+    h1.title {
+      letter-spacing: 0.2em;
+    }
+
+    nav a {
+      margin-right: 1rem;
+      text-decoration: none;
+      color: #23264f;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .email-underline {
+      position: relative;
+      padding-bottom: 20px;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .email-underline::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      height: 32px;
+      background-image: url("images/underline-submissions.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      opacity: 1;
+      pointer-events: none;
+    }
+
+    /* Style Guide Link with Stroke Behind */
+    .style-guide-wrapper {
+      max-width: 800px;
+      margin: 3rem auto 1rem;
+      text-align: right;
+      padding: 0 2rem;
+      position: relative; /* Needed for pseudo-element positioning */
+    }
+
+    .style-guide-link {
+      text-decoration: none;
+      color: #23264f;
+      font-style: italic;
+      font-size: 1rem;
+      position: relative;
+      z-index: 2; /* Text above the stroke */
+    }
+
+    /* Stroke image below the text */
+.style-guide-link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -60px; /* Adjust distance below text */
+  transform: translateX(-50%);
+  width: 350px; /* Stroke width */
+  height: 57px; /* Stroke height */
+  background-image: url("images/stroke2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 1; /* Behind text */
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.3s ease; /* Smooth fade-in */
+}
+
+.style-guide-link:after {
+  opacity: 1; /* Show on hover */
+}
+
+
+    .footer-wrapper {
+      text-align: center;
+      margin-top: 4rem;
+    }
+
+    .logo-bottom {
+      height: 50px;
+      width: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .footer-text {
+      font-size: 0.75rem;
+      margin-top: 0.5rem;
+      color: #23264f;
+    }
+  </style>
+</head>
+
+<body>
+<header>
+    <h1 class="title">
+      <a href="index.html" style="text-decoration: none; color: inherit;">
+        <em>Catachresis</em>
+      </a>
+    </h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>
+        issue one: <em>elegy; <span style="font-weight: 400;">mourning, loss, vanishing objects</span></em>
+      </h2>
+      <p>For our first issue, we invite submissions of work concerned with elegies, or works that are considered by their creators to be elegies. We interpret the term broadly - not only as an expression of grief, but as a mode through which art contends with absence, disappearance, erosion, change, or failure. This may include (but is by no means limited to) the loss of landscape, home, language, memory, meaning, or structure. We welcome all engagements with loss, including those which are abstract, intimate, material, corporeal, or conceptual.&nbsp;</p>
+      <p>This issue brings together works that confront disappearance and explore how creative acts might record, reconstitute, or respond to what is no longer present. It asks what an elegy can be, and how loss might be articulated through content, form, structure, or method. We particularly encourage experimental, interdisciplinary, and hybrid approaches.&nbsp;</p>
+      <p>Work may engage with the theme of elegy through:&nbsp;</p>
+      <p>• Poetry&nbsp;</p>
+      <p>• Prose&nbsp;</p>
+      <p>• Essay (critical, reflective, reviews, interviews or other)&nbsp;</p>
+      <p>• Visual work (including text-image hybrids or scanned/photographed pieces)&nbsp;</p>
+<p>If you are unsure whether your work aligns with the theme, we encourage you to submit it regardless. A member of our editorial team will be glad to consider it and discuss its fit, either for this issue or a future one. Further submission guidelines and our submission agreement can be seen on the link below. &nbsp;</p>
+      <p>All submissions should be sent to: <a href="mailto:catachresisjournal@gmail.com" class="email-underline">
+  catachresisjournal@gmail.com
+</a>
+ </p>
+    </section>
+  </main>
+
+  <div class="style-guide-wrapper">
+    <a href="style guide.html" class="style-guide-link">further guidance &amp; submissions agreement</a>
+  </div>
+
+  <footer>
+    <div class="footer-wrapper">
+      <img src="images/logo.png" alt="Catachresis Logo" class="logo-bottom" />
+      <div class="footer-text">
+        &copy; 2025 Catachresis Journal. All rights reserved.
+      </div>
+    </div>
+</footer>
+</body>
+</html>
+

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catachresis – Academic Journal</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --text-color: #23264f;
+      --bg-color: #fefdef;
+    }
+
+    /* Make full-height layout */
+    html, body {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      font-family: 'Shippori Mincho', serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+	  .definition-note {
+  text-align: right;
+  margin-top: -1rem; /* brings it closer to the text above */
+  margin-bottom: 4rem; /* space below */
+  font-style: italic;
+  font-size: 1rem;
+  color: #23264f;
+}
+
+
+    header {
+      padding: 4rem 2rem 2rem;
+      text-align: center;
+    }
+
+    header h1.title {
+      font-weight: 700;
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+      letter-spacing: 0.19em;
+    }
+
+    nav {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .nav-link {
+      text-decoration: none;
+      color: var(--text-color);
+      margin: 0 1rem;
+      font-weight: 400;
+      position: relative;
+      padding-bottom: 20px;
+      transition: all 0.3s ease;
+    }
+
+   .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150%;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  opacity: 1; /* Always visible */
+}
+
+.submissions-link::after {
+  background-image: url("images/underline-submissions home.png");
+  width: 130%;
+  height: 35px;
+}
+
+    .submissions-link::after {
+      background-image: url("images/underline-submissions home.png");
+      width: 130%;
+      height: 35px;
+    }
+
+    main {
+      flex: 1; /* pushes footer down */
+      max-width: 800px;
+      margin: auto;
+      padding: 0 2rem 4rem;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    h2 {
+      font-weight: 700;
+      margin-bottom: 1rem; }
+	  
+ .first-issue {
+  position: relative;
+}
+
+.first-issue-link {
+  color: inherit;
+  text-decoration: none;
+  font-weight
+  position: relative;
+}
+
+.squiggles-img {
+  position: absolute;
+  left: 52%;
+  top: 1.45em; /* adjust for vertical alignment */
+  transform: translateX(-50%);
+  height: 7px;
+  width: auto;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.first-issue:hover .squiggles-img {
+  opacity: 1;
+}
+
+
+
+
+
+
+    /* Footer at bottom */
+    .footer-wrapper {
+      text-align: center;
+      padding: 1rem 0;
+    }
+
+    .logo-bottom {
+      height: 50px;
+      width: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .footer-text {
+      font-size: 0.75rem;
+      margin-top: 0.5rem;
+      color: #23264f;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1 class="title"><em>Catachresis</em></h1>
+    <p><em>a journal for prose, poetry, essays, visual art &amp; others.</em></p>
+  </header>
+
+  <nav>
+    <a href="submissions.html" class="nav-link submissions-link">Submissions</a>
+  </nav>
+
+  <main>
+    <section>
+      <h2><em>Catachresis</em></h2>
+      <p><em><strong> </strong> katəˈkriːsɪs – origin: Greek – κατάχρησις</em></p>
+      <p><em>n. a semantic misuse or error; the practice of adapting the nearest possible term&nbsp;</em></p>
+      <p class="definition-note"><em>{for something that does not exist}</em></p>
+ <p class="first-issue">
+  We are now accepting submissions for the
+  <a href="submissions.html" class="first-issue-link">
+    first issue of Catachresis</a>,
+  a journal of literary and visual work concerned with experiments in representation, the use and misuse of form, and the role of art in approaching that which evades representation.
+  <img src="images/squiggles2.png" alt="Decorative squiggles" class="squiggles-img">
+</p>
+
+</section>
+  </main>
+
+  <footer class="footer-wrapper">
+    <img src="images/logo.png" alt="Catachresis Logo" class="logo-bottom" />
+    <div class="footer-text">
+      &copy; 2025 Catachresis Journal. All rights reserved.
+    </div>
+</footer>
+</body>
+</html>
