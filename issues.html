@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/site.css">
 
+
   <script
           src="https://www.paypal.com/sdk/js?client-id=BAAz7pdBgp9jV86AwMfq6ntS9i6tjC0Ac3n1gs2cak-et-WyZgRk4LhZsj1ARKPMPsY3ukqoFvh3VQ_BxY&components=hosted-buttons&disable-funding=venmo&currency=GBP">
   </script>
@@ -17,6 +18,18 @@
     a, a:visited {
       color: inherit;
       text-decoration: underline;
+    }
+
+    .cover-cell img:hover,
+    .issue-cover:hover {
+      opacity: 0.85;
+    }
+
+    .issue-cover-link {
+      max-width: 300px;
+      width: 100%;
+      flex-shrink: 0;
+      align-self: flex-start;
     }
 
     .issue-row {
@@ -113,12 +126,12 @@
           <p class="issue-description">Inspired by B.S. Johnson’s experiments with form, <b>Catachresis</b> presents the issue as a collection of six individually bound booklets that can be encountered in any order. Readers are encouraged to choose at random, allowing chance and discontinuity to shape their experience of the work.</p>
           <p>Read them as PDFs by clicking on the icons below, or buy a physical copy <a href="shop.html">here</a></p>
           <div class="cover-row">
-            <div class="cover-cell"><img src="images/Covers+only-2.webp" alt="Booklet cover" /></div>
-            <div class="cover-cell"><img src="images/Covers+only-3.webp" alt="Booklet cover" /></div>
-            <div class="cover-cell"><img src="images/Covers+only-4.webp" alt="Booklet cover" /></div>
-            <div class="cover-cell"><img src="images/Covers+only-5.webp" alt="Booklet cover" /></div>
-            <div class="cover-cell"><img src="images/Covers+only-6.webp" alt="Booklet cover" /></div>
-            <div class="cover-cell"><img src="images/Covers+only-1.webp" alt="Booklet cover" /></div>
+            <a class="cover-cell" href="pdfs/I1/I1.1.pdf" target="_blank"><img src="images/Covers+only-1.webp" alt="Booklet one cover" /></a>
+            <a class="cover-cell" href="pdfs/I1/I1.2.pdf" target="_blank"><img src="images/Covers+only-2.webp" alt="Booklet two cover" /></a>
+            <a class="cover-cell" href="pdfs/I1/I1.3.pdf" target="_blank"><img src="images/Covers+only-3.webp" alt="Booklet three cover" /></a>
+            <a class="cover-cell" href="pdfs/I1/I1.4.pdf" target="_blank"><img src="images/Covers+only-4.webp" alt="Booklet four cover" /></a>
+            <a class="cover-cell" href="pdfs/I1/I1.5.pdf" target="_blank"><img src="images/Covers+only-5.webp" alt="Booklet five cover" /></a>
+            <a class="cover-cell" href="pdfs/I1/I1.6.pdf" target="_blank"><img src="images/Covers+only-6.webp" alt="Booklet six cover" /></a>
           </div>
         </div>
       </div>
