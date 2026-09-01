@@ -7,136 +7,55 @@
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/site.css">
 
   <style>
-    body {
-      background-color: #fefdef;
-      color: #23264f;
-      font-family: 'Shippori Mincho', serif;
-      margin: 0;
-      padding: 0;
-    }
-
-    header, nav, main, footer {
-      max-width: 800px;
-      margin: auto;
-      padding: 2rem;
-    }
-
-    h1, h2 {
-      font-weight: 700;
-      margin: 0;
-    }
-
-    h1.title {
-      letter-spacing: 0.2em;
-    }
-
-    nav a {
-      margin-right: 1rem;
-      text-decoration: none;
-      color: #23264f;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    .email-underline {
-      position: relative;
-      padding-bottom: 20px;
-      text-decoration: none;
-      color: inherit;
-    }
-
-    .email-underline::after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 100%;
-      height: 32px;
-      background-image: url("images/underline-submissions.png");
-      background-repeat: no-repeat;
-      background-size: contain;
-      background-position: center;
-      opacity: 1;
-      pointer-events: none;
-    }
-
-    /* Style Guide Link with Stroke Behind */
+    /* Style guide link with stroke behind */
     .style-guide-wrapper {
-      max-width: 800px;
-      margin: 3rem auto 1rem;
-      text-align: right;
-      padding: 0 2rem;
-      position: relative; /* Needed for pseudo-element positioning */
+      position: relative; /* needed for pseudo-element positioning */
     }
 
     .style-guide-link {
-      text-decoration: none;
-      color: #23264f;
       font-style: italic;
       font-size: 1rem;
-      position: relative;
-      z-index: 2; /* Text above the stroke */
+      z-index: 2; /* text above the stroke */
     }
 
-    /* Stroke image below the text */
-.style-guide-link::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: -60px; /* Adjust distance below text */
-  transform: translateX(-50%);
-  width: 350px; /* Stroke width */
-  height: 57px; /* Stroke height */
-  background-image: url("images/stroke2.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  z-index: 1; /* Behind text */
-  opacity: 0; /* Hidden by default */
-  transition: opacity 0.3s ease; /* Smooth fade-in */
-}
-
-.style-guide-link:after {
-  opacity: 1; /* Show on hover */
-}
-
-
-    .footer-wrapper {
-      text-align: center;
-      margin-top: 4rem;
-    }
-
-    .logo-bottom {
-      height: 50px;
-      width: auto;
-      display: block;
-      margin: 0 auto;
-    }
-
-    .footer-text {
-      font-size: 0.75rem;
-      margin-top: 0.5rem;
-      color: #23264f;
+    .style-guide-link::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: -60px; /* adjust distance below text */
+      transform: translateX(-50%);
+      width: 350px;
+      height: 57px;
+      background-image: url("images/stroke2.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      z-index: 1; /* behind text */
     }
   </style>
 </head>
 
 <body>
-<header>
+<header class="site-header">
     <h1 class="title">
-      <a href="index.html" style="text-decoration: none; color: inherit;">
+      <a href="index.html">
         <em>Catachresis</em>
       </a>
     </h1>
+    <nav>
+      <a href="issues.html">Issues</a>
+      <a href="authors.html">Authors</a>
+      <a href="submissions.html">Submissions</a>
+    </nav>
   </header>
 
   <main>
     <section>
-      <h2>
+      <h2>Submissions Now Closed</h2>
+        <hr>
+        <h2>
         issue one: <em>elegy; <span style="font-weight: 400;">mourning, loss, vanishing objects</span></em>
       </h2>
       <p>For our first issue, we invite submissions of work concerned with elegies, or works that are considered by their creators to be elegies. We interpret the term broadly - not only as an expression of grief, but as a mode through which art contends with absence, disappearance, erosion, change, or failure. This may include (but is by no means limited to) the loss of landscape, home, language, memory, meaning, or structure. We welcome all engagements with loss, including those which are abstract, intimate, material, corporeal, or conceptual.&nbsp;</p>
@@ -168,4 +87,3 @@
 </footer>
 </body>
 </html>
-

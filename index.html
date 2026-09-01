@@ -7,91 +7,35 @@
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/site.css">
 
   <style>
-    :root {
-      --text-color: #23264f;
-      --bg-color: #fefdef;
-    }
-
-    /* Make full-height layout */
+    /* Full-height layout so the footer sits at the bottom */
     html, body {
       height: 100%;
-      margin: 0;
+    }
+
+    body {
       display: flex;
       flex-direction: column;
-      font-family: 'Shippori Mincho', serif;
-      background-color: var(--bg-color);
-      color: var(--text-color);
       line-height: 1.6;
     }
-	  .definition-note {
-  text-align: right;
-  margin-top: -1rem; /* brings it closer to the text above */
-  margin-bottom: 4rem; /* space below */
-  font-style: italic;
-  font-size: 1rem;
-  color: #23264f;
-}
-
 
     header {
+      max-width: none;
       padding: 4rem 2rem 2rem;
       text-align: center;
     }
 
     header h1.title {
-      font-weight: 700;
       font-size: 3rem;
+      margin-top: 0.67em;
       margin-bottom: 0.5rem;
       letter-spacing: 0.19em;
     }
 
-    nav {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-
-    .nav-link {
-      text-decoration: none;
-      color: var(--text-color);
-      margin: 0 1rem;
-      font-weight: 400;
-      position: relative;
-      padding-bottom: 20px;
-      transition: all 0.3s ease;
-    }
-
-   .nav-link::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 150%;
-  height: 40px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  opacity: 1; /* Always visible */
-}
-
-.submissions-link::after {
-  background-image: url("images/underline-submissions home.png");
-  width: 130%;
-  height: 35px;
-}
-
-    .submissions-link::after {
-      background-image: url("images/underline-submissions home.png");
-      width: 130%;
-      height: 35px;
-    }
-
     main {
       flex: 1; /* pushes footer down */
-      max-width: 800px;
-      margin: auto;
       padding: 0 2rem 4rem;
     }
 
@@ -100,58 +44,48 @@
     }
 
     h2 {
-      font-weight: 700;
-      margin-bottom: 1rem; }
-	  
- .first-issue {
-  position: relative;
-}
-
-.first-issue-link {
-  color: inherit;
-  text-decoration: none;
-  font-weight
-  position: relative;
-}
-
-.squiggles-img {
-  position: absolute;
-  left: 52%;
-  top: 1.45em; /* adjust for vertical alignment */
-  transform: translateX(-50%);
-  height: 7px;
-  width: auto;
-  pointer-events: none;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.first-issue:hover .squiggles-img {
-  opacity: 1;
-}
-
-
-
-
-
-
-    /* Footer at bottom */
-    .footer-wrapper {
-      text-align: center;
-      padding: 1rem 0;
+      margin-top: 0.83em;
+      margin-bottom: 1rem;
     }
 
-    .logo-bottom {
-      height: 50px;
+    .definition-note {
+      text-align: right;
+      margin-top: -1rem; /* brings it closer to the text above */
+      margin-bottom: 4rem; /* space below */
+      font-style: italic;
+      font-size: 1rem;
+    }
+
+    .first-issue {
+      position: relative;
+    }
+
+    .first-issue-link {
+      color: inherit;
+      text-decoration: none;
+      position: relative;
+    }
+
+    .squiggles-img {
+      position: absolute;
+      left: 52%;
+      top: 1.45em; /* adjust for vertical alignment */
+      transform: translateX(-50%);
+      height: 7px;
       width: auto;
-      display: block;
-      margin: 0 auto;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 0.3s ease;
     }
 
-    .footer-text {
-      font-size: 0.75rem;
-      margin-top: 0.5rem;
-      color: #23264f;
+    .first-issue:hover .squiggles-img {
+      opacity: 1;
+    }
+
+    footer.footer-wrapper {
+      max-width: none;
+      margin: 0;
+      padding: 1rem 0;
     }
   </style>
 </head>
@@ -163,7 +97,9 @@
   </header>
 
   <nav>
-    <a href="submissions.html" class="nav-link submissions-link">Submissions</a>
+    <a href="issues.html">Issues</a>
+    <a href="authors.html">Authors</a>
+    <a href="submissions.html">Submissions</a>
   </nav>
 
   <main>
@@ -172,15 +108,18 @@
       <p><em><strong> </strong> katəˈkriːsɪs – origin: Greek – κατάχρησις</em></p>
       <p><em>n. a semantic misuse or error; the practice of adapting the nearest possible term&nbsp;</em></p>
       <p class="definition-note"><em>{for something that does not exist}</em></p>
- <p class="first-issue">
-  We are now accepting submissions for the
-  <a href="submissions.html" class="first-issue-link">
-    first issue of Catachresis</a>,
-  a journal of literary and visual work concerned with experiments in representation, the use and misuse of form, and the role of art in approaching that which evades representation.
-  <img src="images/squiggles2.png" alt="Decorative squiggles" class="squiggles-img">
-</p>
-
-</section>
+      <h3 style="margin-bottom: 0px;"><em>Issue 1: elegy;</em></h3>
+      <h4 style="margin-top: 0px;"><em>mourning, loss, vanishing objects</em></h4>
+      <p class="first-issue">
+        <b>Elegy: Loss, Mourning and Vanishing Objects</b> explores the possibilities and limitations of the elegiac mode. Moving beyond elegy as an expression of grief, this issue considers loss as a way of engaging with absence, disappearance, erosion, change, and failure.
+      </p>
+      <p>        The works gathered here reflect on the loss of individuals, places, languages, memories, structures, and feelings, asking how creative acts might respond to what is no longer present. Rather than relying on traditional consolatory structures, these pieces approach loss through uncertainty, fragmentation, and transformation, testing how elegy might be reimagined through form, method, and material.
+      </p>
+      <p>        This issue asks what an elegy can be — and how art might record, resist, or reconstitute the things that vanish.
+      </p>
+      <p>        Issue One is available as a physical copy <a href="shop.html">to order</a>, or can be <a href="issues.html">read online</a>.
+      </p>
+    </section>
   </main>
 
   <footer class="footer-wrapper">
@@ -188,6 +127,6 @@
     <div class="footer-text">
       &copy; 2025 Catachresis Journal. All rights reserved.
     </div>
-</footer>
+  </footer>
 </body>
 </html>
