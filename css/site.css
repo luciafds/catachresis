@@ -135,3 +135,8 @@ nav a::after {
   margin-top: 0.5rem;
   color: var(--text-color);
 }
+
+a, a:visited {
+  color: inherit;
+  text-decoration: underline;
+}
